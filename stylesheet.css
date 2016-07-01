@@ -1,5 +1,10 @@
+body{
+	background-color: rgba(246, 238, 224, 1); /* Background color (parchment) for all pages */
+}
+
+/* Start code for header */
 a{ /* Links */
-	color: white; /* Link text color is white */
+	color: rgba(46, 84, 56, 1); /* Link text color is green */
 	font-family: sans-serif; /*L ink text font is sans-serif */
 }
 
@@ -7,12 +12,15 @@ ul{ /* List for header */
 	list-style-type: none; /* Remove the underline/bullets from links */
 	margin: 0; /* No margin in the list*/
 	padding: 0; /* No padding in the list */
-	!overflow: hidden; /* -------- I DON'T KNOW WHAT THIS LINE DOES - TEST IT? */
-	background: rgba(0, 0, 0, 0.5); /* Background is white, with an opacity of 50% */
+	overflow: hidden; /* -------- I DON'T KNOW WHAT THIS LINE DOES - TEST IT? */
+	background: rgba(255, 255, 255, 0.5); /* Background is white, with an opacity of 50% */
 	position: fixed; /* The list will be fixed at the top */
 	top: 0; /* No margin at the top of the list -------- REDUNDANT??? */
-	width: 100%; /* The list goes from edge to edge of the webpage ------ CHANGE IN MOBILE? */
+	width: 99%; /* The list goes from edge to edge of the webpage ------ CHANGE IN MOBILE? */
   z-index: 7; /* The list will be on top of all elements with a smaller z-index */
+	border-color: rgba(246, 238, 224, 1);
+	border-bottom: 2px;
+
 }
 
 li{ /* List items in header */
@@ -21,24 +29,21 @@ li{ /* List items in header */
 
 li a{ /* Links in the header list */
 	display: block; /* Each link in the list will be a clickable block*/
-	color: white;
+	/*color: white; */
 	text-align: center;
 	padding: 14px 16px;
   margin-right: 8px;
 	text-decoration: none;
 }
 
-li a:hover {
-    background-color: rgba(255, 255, 255, 1);
+li a:hover { /* When mouse is over links in the header */
+    /* background-color: rgba(255, 255, 255, 1); */
     color: black;
 }
 
-.active {
-    background-color: rgba(159, 111, 19, 1);
-    color: white;
-}
-
-li a: active{
+li a:active{
   background-color: rgba(159, 111, 19, 1);
   color: white;
 }
+
+/* Start code for header */
